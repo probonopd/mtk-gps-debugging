@@ -1,6 +1,25 @@
 # mtk-gps-debugging
 
+## Notes
+
 __The missing MTK driver GPS debugging information, translated from http://bbs.raindi.net/thread-24797-1-1.html. I am not the author of this, just storing a translated version here for easier reference. Please feel free to send pull requests to improve this documentation.__
+
+## Starting GPS engineering tools
+
+```
+adb shell am start -n com.mediatek.ygps/.YgpsActivity
+
+adb shell am start -n com.mediatek.engineermode/com.mediatek.engineermode.EngineerMode
+
+adb shell am start -n com.mediatek.gnss.nonframeworklbs/.MainActivity
+```
+
+Activities like these can be found out with `adb shell dumpsys package |  grep 'Activity'`.
+
+---
+
+
+## Translated documentation
 
 **Basic knowledge of** **GPS** 
 
