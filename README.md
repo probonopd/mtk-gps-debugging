@@ -211,7 +211,9 @@ Can.
 
 Please modify as follows:
 
+```
 #define LOG_FILE “/data/misc/gpsdebug.log”
+```
 
 **Ø 3.4) What log can be captured to facilitate MTK engineers to quickly analyze GPS problems.**
 
@@ -223,7 +225,7 @@ To determine this is the problem, you need to follow the steps below to confirm.
 
 Step1: Turn on the location service in the setting menu.
 
-Step2: check engineering mode-----"Location---"YGPS----->INFORMATION--àMNL version
+Step2: check engineering mode -> Location -> YGPS -> INFORMATION -> MNL version
 
 For UNKNOWN. If it is UNKNOWN, it means that the GPS has not been activated at all.
 
@@ -243,7 +245,7 @@ C, AGPS certification test failed. Need mtklog APlog, Modem log, Netlog), gps de
 
 Can.
 
-Engineering mode -----"Location---"YGPS----->NMEA LOG--à find the dbg2ddms button, the default display becomes Disable dbg2ddms[Need Restart], which means it has been opened, so that NMEA sentence can be used The log is in mtklog—"mobile log---"main log.
+Engineering mode -> Location -> YGPS -> NMEA LOG -> find the dbg2ddms button, the default display becomes Disable dbg2ddms [Need Restart], which means it has been opened, so that NMEA sentence can be used The log is in mtklog—"mobile log---"main log.
 
 **Ø 3.6) How to judge the GPS software is working normally through log ?**
 
